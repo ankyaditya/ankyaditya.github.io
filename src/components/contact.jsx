@@ -1,7 +1,7 @@
-import React from "react";
-import imageOverlay from "../img/earth.jpg";
+import React, { Component } from "react";
+import imageOverlay from "../img/code.jpg";
 
-class Contact extends React.Component {
+class Contact extends Component {
   render() {
     return (
       <section
@@ -21,8 +21,8 @@ class Contact extends React.Component {
                       </div>
                       <div>
                         <form
-                          action="https://formspree.io/xdoeonlo"
-                          method="POST"
+                          // action="https://formspree.io/xdoeonlo"
+                          // method="POST"
                           className="contactForm"
                         >
                           <div id="sendmessage">
@@ -87,7 +87,7 @@ class Contact extends React.Component {
                             </div>
                             <div className="col-md-12">
                               <button
-                                type="submit"
+                                type="button"
                                 className="button button-a button-big button-rouded"
                               >
                                 Send Message
@@ -119,18 +119,7 @@ class Contact extends React.Component {
                         <ul>
                           <li>
                             <a
-                              href=""
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <span className="ico-circle">
-                                <i className="ion-social-codepen"></i>
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href=""
+                              href="https://github.com/ankyaditya"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -141,7 +130,7 @@ class Contact extends React.Component {
                           </li>
                           <li>
                             <a
-                              href=""
+                              href="https://www.linkedin.com/in/ankyaditya/"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
