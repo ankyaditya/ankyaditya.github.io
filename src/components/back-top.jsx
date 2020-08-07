@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from "react";
 import $ from 'jquery';
 import '../libs/easing.js'
 
-class BackToTop extends React.Component {
+class BackToTop extends Component {
     componentDidMount(){
         $('.back-to-top').click(function(){
             $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from "react";
 import $ from 'jquery';
 
-class Preloader extends React.Component {
+class Preloader extends Component {
     componentDidMount(){
         $(window).on('load', function () {
             if ($('#preloader').length) {
