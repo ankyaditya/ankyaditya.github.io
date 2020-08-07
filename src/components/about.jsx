@@ -1,42 +1,73 @@
-import React from "react";
+import React, { Component, Fragment } from "react";
 import myImage from "../img/myImage.png";
+import beginner_image from "../img/beginner.png"
+import intermediate_image from "../img/intermediate.png"
 
-class About extends React.Component {
+class About extends Component {
   constructor() {
     super();
     this.state = {
       skills: [
-        { id: "HTML5_skill", content: "HTML5", porcentage: "80%", value: "80" },
-        { id: "CSS3_skill", content: "CSS3", porcentage: "75%", value: "75" },
         {
-          id: "JavaScript_skill",
-          content: "JavaScript",
-          porcentage: "90%",
-          value: "90"
+          id: "Flask_skill",
+          content: "Flask",
+          level: beginner_image,
+          value: "80"
         },
-        { id: "PHP_skill", content: "PHP", porcentage: "70%", value: "70" },
+        {
+          id: "NodeJS_skill",
+          content: "NodeJS",
+          level: intermediate_image,
+          value: "75"
+        },
         {
           id: "ReactJS_skill",
           content: "ReactJS",
-          porcentage: "80%",
-          value: "80"
+          level: beginner_image,
+          value: "90"
+        },
+        {
+          id: "PHP_skill",
+          content: "PHP",
+          level: intermediate_image,
+          value: "70"
         },
         {
           id: "Python_skill",
           content: "Python",
-          porcentage: "75%",
+          level: intermediate_image,
           value: "75"
-        },
+        }
+      ],
+      skills2: [
         {
-          id: "VanillaJS_skill",
-          content: "VanillaJS",
-          porcentage: "85%",
+          id: "MySQL_skill",
+          content: "MySQL",
+          level: intermediate_image,
           value: "85"
         },
         {
-          id: "Wordpress_skill",
-          content: "Wordpress",
-          porcentage: "80%",
+          id: "MongoDB_skill",
+          content: "MongoDB",
+          level: beginner_image,
+          value: "80"
+        },
+        {
+          id: "Matlab_skill",
+          content: "Matlab",
+          level: intermediate_image,
+          value: "80"
+        },
+        {
+          id: "C_skill",
+          content: "C",
+          level: intermediate_image,
+          value: "80"
+        },
+        {
+          id: "Java_skill",
+          content: "Java",
+          level: intermediate_image,
           value: "80"
         }
       ],
@@ -44,17 +75,12 @@ class About extends React.Component {
         {
           id: "first-p-about",
           content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
+            "enthusiastic in programming. I have the excellence in backend programming and also interested in DevOps. I can understand quickly and able to cooperate in pressure"
         },
         {
           id: "second-p-about",
           content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
-        },
-        {
-          id: "third-p-about",
-          content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
+            "With over one years of experience developing web applications using the latest front-end and back-end technologies."
         }
       ]
     };
@@ -68,45 +94,21 @@ class About extends React.Component {
             <div className="col-sm-12">
               <div className="box-shadow-full">
                 <div className="row">
-                  <div className="col-md-6">
-                    <div className="row">
+                  <div className="col-md-6" style={{ marginTop: "auto", marginBottom: "auto" }}>
+                    <div
+                      className="col-sm-6 col-md-7"
+                      style={{ margin: "0 auto" }}
+                    >
                       <div
-                        className="col-sm-6 col-md-5"
-                        style={{ margin: "0 auto" }}
+                        className="about-img"
+                        style={{ textAlign: "center" }}
                       >
-                        <div
-                          className="about-img"
-                          style={{ textAlign: "center" }}
-                        >
-                          <img
-                            className="img-fluid rounded b-shadow-a"
-                            alt=""
-                          />
-                        </div>
+                        <img
+                          className="img-fluid rounded b-shadow-a"
+                          alt=""
+                          src={myImage}
+                        />
                       </div>
-                    </div>
-                    <div className="skill-mf">
-                      {/* <p className="title-s">Skill</p> */}
-                      {this.state.skills.map(skill => {
-                        return (
-                          <React.Fragment key={skill.id}>
-                            <span>{skill.content}</span>{" "}
-                            <span className="pull-right">
-                              {skill.porcentage}
-                            </span>
-                            <div className="progress">
-                              <div
-                                className="progress-bar"
-                                role="progressbar"
-                                style={{ width: skill.porcentage }}
-                                aria-valuenow={skill.value}
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                              ></div>
-                            </div>
-                          </React.Fragment>
-                        );
-                      })}
                     </div>
                   </div>
                   <div className="col-md-6">
@@ -119,6 +121,35 @@ class About extends React.Component {
                           <p className="lead" key={content.id}>
                             {content.content}
                           </p>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-md-6">
+                    <div className="skill-mf">
+                      {/* <p className="title-s">Skill</p> */}
+                      {this.state.skills.map(skill => {
+                        return (
+                          <Fragment key={skill.id}>
+                            <span className="title-s">{skill.content}</span>{" "}
+                            <img src={skill.level} className="pull-right"></img>
+                            <div className="progress"></div>
+                          </Fragment>
+                        );
+                      })}
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="skill-mf">
+                      {this.state.skills2.map(skill => {
+                        return (
+                          <Fragment key={skill.id}>
+                            <span className="title-s">{skill.content}</span>{" "}
+                            <img src={skill.level} className="pull-right"></img>
+                            <div className="progress"></div>
+                          </Fragment>
                         );
                       })}
                     </div>
