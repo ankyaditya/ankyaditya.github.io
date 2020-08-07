@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 import $ from "jquery";
 
 import logo1 from "../img/male1.png";
 import logo2 from "../img/male.png";
 
-class Navbar extends React.Component {
+class Navbar extends Component {
   constructor() {
     super();
     this.state = {
@@ -87,11 +87,7 @@ class Navbar extends React.Component {
       >
         <div className="container">
           <a className="navbar-brand js-scroll" href="#page-top">
-            <img
-              src={this.state.logo}
-              alt="logo"
-              style={{ maxWidth: "100px" }}
-            />
+            'A z l
           </a>
           <button
             className="navbar-toggler collapsed"
