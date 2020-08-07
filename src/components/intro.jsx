@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import "./stars.scss";
 import Typed from "react-typed";
 
-class Intro extends React.Component {
+class Intro extends Component {
   render() {
     return (
       // <div id="home" className="intro route bg-image " style={{backgroundImage: "url("+bigImage+")"}}>
@@ -14,13 +14,12 @@ class Intro extends React.Component {
         <div className="intro-content display-table">
           <div className="table-cell">
             <div className="container">
-              <h1 className="intro-title mb-4">Hello, I am XYZ</h1>
+              <h1 className="intro-title mb-4">Hello, I am Anky Aditya P</h1>
               <p className="intro-subtitle">
                 <span className="text-slider-items"></span>
                 <strong className="text-slider">
                   <Typed
                     strings={[
-                      "Front End Developer",
                       "Back End Developer",
                       "Software Engineer"
                     ]}
