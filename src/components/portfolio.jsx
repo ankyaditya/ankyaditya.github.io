@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import MyVerticallyCenteredModal from './modal'
 
 import {
-  safet, safet2, safet3, safet4, safet5, safet6, safet7, safet8, safet9, safet10, safet11, safet12, safet13, safet14, safet15, safet16, safet17, safet18, safet19, safet20, safet21, safet22, safet23, safet24, safet25, safet26,  safet27, safet28, safet29, safet30,
+  safet, safet2, safet3, safet4, safet5, safet6, safet7, safet8, safet9, safet10, safet11, safet12, safet13, safet14, safet15, safet16, safet17, safet18, safet19, safet20, safet21, safet22, safet23, safet24, safet25, safet26, safet27, safet28, safet29, safet30,
   vpbx, vpbx2, vpbx3, vpbx4, vpbx5, vpbx6, vpbx7, vpbx8, vpbx9, vpbx10, vpbx11, vpbx12, vpbx13, vpbx14, vpbx15, vpbx16,
   iod, iod2, iod3, iod4, iod5, iod6, iod7,
   bod, bod2, bod3, bod4, bod5, bod6, bod7, bod8,
@@ -10,7 +10,7 @@ import {
   daloradius, daloradius2, daloradius3
 } from "../img/image"
 
-const safet_image = [safet2, safet3, safet4, safet5, safet6, safet7, safet8, safet9, safet10, safet11, safet12, safet13, safet14, safet15, safet16, safet17, safet18, safet19, safet20, safet21, safet22, safet23, safet24, safet25, safet26,  safet27, safet28, safet29, safet30]
+const safet_image = [safet2, safet3, safet4, safet5, safet6, safet7, safet8, safet9, safet10, safet11, safet12, safet13, safet14, safet15, safet16, safet17, safet18, safet19, safet20, safet21, safet22, safet23, safet24, safet25, safet26, safet27, safet28, safet29, safet30]
 const vpbx_image = [vpbx2, vpbx3, vpbx4, vpbx5, vpbx6, vpbx7, vpbx8, vpbx9, vpbx10, vpbx11, vpbx12, vpbx13, vpbx14, vpbx15, vpbx16]
 const iod_image = [iod2, iod3, iod4, iod5, iod6, iod7]
 const bod_image = [bod2, bod3, bod4, bod5, bod6, bod7, bod8]
@@ -30,7 +30,8 @@ class Portfolio extends Component {
         participated: "Developed a deep learning model to detect number plate used in Mobile Apps using the TensorFlow framework, fixed a bug when adding new vehicle data, added parking feature, added a page to display data on violations that have been approved by the police, added incoming report chart and status report pie chart, As a project manager",
         link: "https://safet.id",
         image: safet,
-        image_file: safet_image
+        image_file: safet_image,
+        hover: false
       },
       {
         id: "VirtualPBX_portfolio",
@@ -41,7 +42,8 @@ class Portfolio extends Component {
         participated: "Migrate VirtualPBX from GCP to internal Lab servers, Integrate VirtualPBX with SBC, added extension as an operator feature, added forwarded extension feature, added outbound number (CRUD) feature, add call log data on VirtualPBX, added wallet features, added Voucher feature, added payment charging system",
         link: null,
         image: vpbx,
-        image_file: vpbx_image
+        image_file: vpbx_image,
+        hover: false
       },
       {
         id: "IoD_portfolio",
@@ -52,7 +54,8 @@ class Portfolio extends Component {
         participated: "Make changes to the filterID from static to dynamic, creating a new user type/login for MITRA company, fix the user mapping bug for internet speed",
         link: null,
         image: iod,
-        image_file: iod_image
+        image_file: iod_image,
+        hover: false
       },
       {
         id: "BoD_portfolio",
@@ -63,7 +66,8 @@ class Portfolio extends Component {
         participated: "Fixed bug in the process of purchasing bandwidth packages, fixed bug when adding new users, fixed bug when deleting user accounts, fixed bug in the process of stopping bandwidth packets in use",
         link: null,
         image: bod,
-        image_file: bod_image
+        image_file: bod_image,
+        hover: false
       },
       {
         id: "RoomPi_portfolio",
@@ -74,7 +78,8 @@ class Portfolio extends Component {
         participated: "Fixed bug sending email to conference participants, fixed bug connected participant display (not showing), fixed a bug on the process unsilence/silence speaker",
         link: null,
         image: roompi,
-        image_file: roompi_image
+        image_file: roompi_image,
+        hover: false
       },
       {
         id: "daloRadius_portfolio",
@@ -85,7 +90,8 @@ class Portfolio extends Component {
         participated: "Added tcpdump feature to daloRADIUS, added a feature to download files (.pcap) from the tcpdump process, make improvements to add & delete user data to PCRF",
         link: null,
         image: daloradius,
-        image_file: daloradius_image
+        image_file: daloradius_image,
+        hover: false
       },
     ],
     selected_portfolio: {
@@ -121,7 +127,7 @@ class Portfolio extends Component {
           <div className="row">
             {this.state.portfolios.map(portfolio => {
               return (
-                <div className="col-md-4">
+                <div className="col-md-4" key={portfolio.id}>
                   <div className="work-box">
                     <a href={portfolio.image} data-lightbox={"gallery-" + portfolio.name}>
                       <div className="work-img">
@@ -140,26 +146,42 @@ class Portfolio extends Component {
                         </div>
                         <div className="col-sm-4">
                           <div className="w-like">
-                            <span className="ion-ios-plus-outline" style={{ cursor: "pointer" }} onClick={() =>
-                              this.setState(prevState => ({
-                                modalShow: true,
-                                selected_portfolio: {
-                                  name: portfolio.name,
-                                  developed: portfolio.category,
-                                  description: portfolio.description,
-                                  user_target: portfolio.user_target,
-                                  participated: portfolio.participated,
-                                  link: portfolio.link
-                                }
+                            <span
+                              className={portfolio.hover ? "ion-ios-plus" : "ion-ios-plus-outline"}
+                              onMouseEnter={() => this.setState(prevState => ({
+                                portfolios: prevState.portfolios.map(
+                                  obj => (obj.id === portfolio.id ? Object.assign(obj, { hover: true }) : obj)
+                                )
                               }))
-                            }>
+                              }
+                              onMouseLeave={() => this.setState(prevState => ({
+                                portfolios: prevState.portfolios.map(
+                                  obj => (obj.id === portfolio.id ? Object.assign(obj, { hover: false }) : obj)
+                                )
+                              }))
+                              }
+                              style={{ cursor: "pointer" }}
+                              onClick={() =>
+                                this.setState(prevState => ({
+                                  modalShow: true,
+                                  selected_portfolio: {
+                                    name: portfolio.name,
+                                    developed: portfolio.category,
+                                    description: portfolio.description,
+                                    user_target: portfolio.user_target,
+                                    participated: portfolio.participated,
+                                    link: portfolio.link
+                                  }
+                                }))
+                              }>
                             </span>
                           </div>
                         </div>
                       </div>
                     </div>
-                    {portfolio.image_file.map(image => (
+                    {portfolio.image_file.map((image, i) => (
                       <a
+                        key={i}
                         href={image}
                         data-lightbox={"gallery-" + portfolio.name}
                         style={{ display: "none" }}
