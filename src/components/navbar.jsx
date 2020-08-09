@@ -5,18 +5,16 @@ import logo1 from "../img/male1.png";
 import logo2 from "../img/male.png";
 
 class Navbar extends Component {
-  constructor() {
-    super();
-    this.state = {
-      logo: logo1
-    };
-  }
+  state = {
+    logo: logo1
+  };
+
 
   componentDidMount() {
     const nav = $("nav");
     let navHeight = nav.outerHeight();
 
-    $(".navbar-toggler").on("click", function() {
+    $(".navbar-toggler").on("click", function () {
       if (!$("#mainNav").hasClass("navbar-reduce")) {
         $("#mainNav").addClass("navbar-reduce");
       }
@@ -27,7 +25,7 @@ class Navbar extends Component {
       offset: navHeight
     });
 
-    $(".js-scroll").on("click", function() {
+    $(".js-scroll").on("click", function () {
       $(".navbar-collapse").collapse("hide");
     });
 
@@ -51,10 +49,10 @@ class Navbar extends Component {
       }
     });
 
-    $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function() {
+    $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function () {
       if (
         window.location.pathname.replace(/^\//, "") ===
-          this.pathname.replace(/^\//, "") &&
+        this.pathname.replace(/^\//, "") &&
         window.location.hostname === this.hostname
       ) {
         var target = $(this.hash);
@@ -74,7 +72,7 @@ class Navbar extends Component {
       }
     });
 
-    $(".js-scroll").on("click", function() {
+    $(".js-scroll").on("click", function () {
       $(".navbar-collapse").collapse("hide");
     });
   }

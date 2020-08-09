@@ -4,87 +4,85 @@ import beginner_image from "../img/beginner.png"
 import intermediate_image from "../img/intermediate.png"
 
 class About extends Component {
-  constructor() {
-    super();
-    this.state = {
-      skills: [
-        {
-          id: "Flask_skill",
-          content: "Flask",
-          level: beginner_image,
-          value: "80"
-        },
-        {
-          id: "NodeJS_skill",
-          content: "NodeJS",
-          level: intermediate_image,
-          value: "75"
-        },
-        {
-          id: "ReactJS_skill",
-          content: "ReactJS",
-          level: beginner_image,
-          value: "90"
-        },
-        {
-          id: "PHP_skill",
-          content: "PHP",
-          level: intermediate_image,
-          value: "70"
-        },
-        {
-          id: "Python_skill",
-          content: "Python",
-          level: intermediate_image,
-          value: "75"
-        }
-      ],
-      skills2: [
-        {
-          id: "MySQL_skill",
-          content: "MySQL",
-          level: intermediate_image,
-          value: "85"
-        },
-        {
-          id: "MongoDB_skill",
-          content: "MongoDB",
-          level: beginner_image,
-          value: "80"
-        },
-        {
-          id: "Matlab_skill",
-          content: "Matlab",
-          level: intermediate_image,
-          value: "80"
-        },
-        {
-          id: "C_skill",
-          content: "C",
-          level: intermediate_image,
-          value: "80"
-        },
-        {
-          id: "Java_skill",
-          content: "Java",
-          level: intermediate_image,
-          value: "80"
-        }
-      ],
-      about_me: [
-        {
-          id: "first-p-about",
-          content:
-            "enthusiastic in programming. I have the excellence in backend programming and also interested in DevOps. I can understand quickly and able to cooperate in pressure"
-        },
-        {
-          id: "second-p-about",
-          content:
-            "With over one years of experience developing web applications using the latest front-end and back-end technologies."
-        }
-      ]
-    };
-  }
+  state = {
+    skills: [
+      {
+        id: "Flask_skill",
+        content: "Flask",
+        level: beginner_image,
+        value: "80"
+      },
+      {
+        id: "NodeJS_skill",
+        content: "NodeJS",
+        level: intermediate_image,
+        value: "75"
+      },
+      {
+        id: "ReactJS_skill",
+        content: "ReactJS",
+        level: beginner_image,
+        value: "90"
+      },
+      {
+        id: "PHP_skill",
+        content: "PHP",
+        level: intermediate_image,
+        value: "70"
+      },
+      {
+        id: "Python_skill",
+        content: "Python",
+        level: intermediate_image,
+        value: "75"
+      }
+    ],
+    skills2: [
+      {
+        id: "MySQL_skill",
+        content: "MySQL",
+        level: intermediate_image,
+        value: "85"
+      },
+      {
+        id: "MongoDB_skill",
+        content: "MongoDB",
+        level: beginner_image,
+        value: "80"
+      },
+      {
+        id: "Matlab_skill",
+        content: "Matlab",
+        level: intermediate_image,
+        value: "80"
+      },
+      {
+        id: "C_skill",
+        content: "C",
+        level: intermediate_image,
+        value: "80"
+      },
+      {
+        id: "Java_skill",
+        content: "Java",
+        level: intermediate_image,
+        value: "80"
+      }
+    ],
+    about_me: [
+      {
+        id: "first-p-about",
+        content:
+          "enthusiastic in programming. I have the excellence in backend programming and also interested in DevOps. I can understand quickly and able to cooperate in pressure"
+      },
+      {
+        id: "second-p-about",
+        content:
+          "With over one years of experience developing web applications using the latest front-end and back-end technologies."
+      }
+    ]
+  };
+
 
   render() {
     return (
