@@ -24,14 +24,12 @@ const MyVerticallyCenteredModal = (props) => {
             </Modal.Header>
             <Modal.Body>
                 <h5>Description</h5>
-                <ul>
-                    <li>{props.selected_portfolio.description}</li>
-                </ul>
-                <h5>User Targer</h5>
+                    <p>{props.selected_portfolio.description}</p>
+                <h5>User Target</h5>
                 <ul>
                     <li>{props.selected_portfolio.user_target}</li>
                 </ul>
-                <h5>Developed By</h5>
+                <h5>Developed using</h5>
                 <ul>
                     <li>{props.selected_portfolio.developed}</li>
                 </ul>

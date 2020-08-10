@@ -4,7 +4,7 @@ import MyVerticallyCenteredModal from './modal'
 import {
   safet, safet2, safet3, safet4, safet5, safet6, safet7, safet8, safet9, safet10, safet11, safet12, safet13, safet14, safet15, safet16, safet17, safet18, safet19, safet20, safet21, safet22, safet23, safet24, safet25, safet26, safet27, safet28, safet29, safet30,
   vpbx, vpbx2, vpbx3, vpbx4, vpbx5, vpbx6, vpbx7, vpbx8, vpbx9, vpbx10, vpbx11, vpbx12, vpbx13, vpbx14, vpbx15, vpbx16,
-  iod, iod2, iod3, iod4, iod5, iod6, iod7,
+  iod, iod2, iod3, iod4, iod5, iod6, iod7, iod8,
   bod, bod2, bod3, bod4, bod5, bod6, bod7, bod8,
   roompi, roompi2, roompi3, roompi4, roompi5,
   daloradius, daloradius2, daloradius3
@@ -12,7 +12,7 @@ import {
 
 const safet_image = [safet2, safet3, safet4, safet5, safet6, safet7, safet8, safet9, safet10, safet11, safet12, safet13, safet14, safet15, safet16, safet17, safet18, safet19, safet20, safet21, safet22, safet23, safet24, safet25, safet26, safet27, safet28, safet29, safet30]
 const vpbx_image = [vpbx2, vpbx3, vpbx4, vpbx5, vpbx6, vpbx7, vpbx8, vpbx9, vpbx10, vpbx11, vpbx12, vpbx13, vpbx14, vpbx15, vpbx16]
-const iod_image = [iod2, iod3, iod4, iod5, iod6, iod7]
+const iod_image = [iod2, iod3, iod4, iod5, iod6, iod7, iod8]
 const bod_image = [bod2, bod3, bod4, bod5, bod6, bod7, bod8]
 const roompi_image = [roompi2, roompi3, roompi4, roompi5]
 const daloradius_image = [daloradius2, daloradius3]

@@ -85,7 +85,7 @@ class Navbar extends Component {
       >
         <div className="container">
           <a className="navbar-brand js-scroll" href="#page-top">
-            'A z l
+            A z l
           </a>
           <button
             className="navbar-toggler collapsed"
