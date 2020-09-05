@@ -28,7 +28,7 @@ class Portfolio extends Component {
         description: "an intelligent application based on the Internet of Things (IoT) that can help the police to maximally enforce the law by involving active public participation. Safe-T is a mobile application and can work by detecting vehicle license plates. When the vehicle number plate has been detected, the user selects the detected license plate based on the vehicle that committed the violation. Based on these candidates, the algorithm on SAFE-T will perform automatic cropping of the license plate, followed by an optical character recognition (OCR) process. The results from the OCR will be sent to the database for matching vehicle identities. Then, the user will verify the data between the license plate and the data that stored in database. After this stage is complete, the data will be sent to the reporting database for further processing by the authorities.",
         user_target: "Public",
         participated: "Developed a deep learning model to detect number plate used in Mobile Apps using the TensorFlow framework, fixed a bug when adding new vehicle data, added parking feature, added a page to display data on violations that have been approved by the police, added incoming report chart and status report pie chart, As a project manager",
-        link: "https://safet.id",
+        link: "https://safe-t.netlify.app",
         image: safet,
         image_file: safet_image,
         hover: false
