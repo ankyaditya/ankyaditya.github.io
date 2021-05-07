@@ -1,72 +1,58 @@
 import React, { Component, Fragment } from "react";
 import myImage from "../img/myImage.png";
-import beginner_image from "../img/beginner.png"
-import intermediate_image from "../img/intermediate.png"
 
 class About extends Component {
   state = {
     skills: [
       {
-        id: "Flask_skill",
-        content: "Flask",
-        level: beginner_image,
-        value: "80"
+        id: "flaskSkill",
+        content: "Flask"
       },
       {
-        id: "NodeJS_skill",
-        content: "NodeJS",
-        level: intermediate_image,
-        value: "75"
+        id: "nodejsSkill",
+        content: "NodeJS"
       },
       {
-        id: "ReactJS_skill",
-        content: "ReactJS",
-        level: beginner_image,
-        value: "90"
+        id: "reactjsSkill",
+        content: "ReactJS"
       },
       {
-        id: "PHP_skill",
-        content: "PHP",
-        level: intermediate_image,
-        value: "70"
+        id: "phpSkill",
+        content: "PHP"
       },
       {
-        id: "Python_skill",
-        content: "Python",
-        level: intermediate_image,
-        value: "75"
+        id: "pythonSkill",
+        content: "Python"
+      },
+      {
+        id: "golangSkill",
+        content: "Golang"
       }
     ],
     skills2: [
       {
-        id: "MySQL_skill",
-        content: "MySQL",
-        level: intermediate_image,
-        value: "85"
+        id: "mysqlSkill",
+        content: "MySQL"
       },
       {
-        id: "MongoDB_skill",
-        content: "MongoDB",
-        level: beginner_image,
-        value: "80"
+        id: "mongodbSkill",
+        content: "MongoDB"
       },
       {
-        id: "Matlab_skill",
-        content: "Matlab",
-        level: intermediate_image,
-        value: "80"
+        id: "redisSkill",
+        content: "Redis"
       },
       {
-        id: "C_skill",
-        content: "C",
-        level: intermediate_image,
-        value: "80"
+        id: "dockerSkill",
+        content: "Docker"
       },
       {
-        id: "Java_skill",
-        content: "Java",
-        level: intermediate_image,
-        value: "80"
+        id: "kubernetesSkill",
+        content: "Kubernetes"
+      },
+      {
+        id: "elastichSearchSkill",
+        content: "Elastic Search"
       }
     ],
     about_me: [
@@ -78,7 +64,7 @@ class About extends Component {
       {
         id: "second-p-about",
         content:
-          "With over one years of experience developing web applications using the latest front-end and back-end technologies."
+          "With over one years of experience developing applications and web services using the latest front-end and back-end technologies."
       }
     ]
   };
@@ -127,13 +113,11 @@ class About extends Component {
                 <div className="row">
                   <div className="col-md-6">
                     <div className="skill-mf">
-                      {/* <p className="title-s">Skill</p> */}
                       {this.state.skills.map(skill => {
                         return (
                           <Fragment key={skill.id}>
                             <span className="title-s">{skill.content}</span>{" "}
-                            <img src={skill.level} className="pull-right"></img>
-                            <div className="progress"></div>
+                            <div className="progress" style={{height: ".15rem"}}></div>
                           </Fragment>
                         );
                       })}
@@ -145,8 +129,7 @@ class About extends Component {
                         return (
                           <Fragment key={skill.id}>
                             <span className="title-s">{skill.content}</span>{" "}
-                            <img src={skill.level} className="pull-right"></img>
-                            <div className="progress"></div>
+                            <div className="progress" style={{height: ".15rem"}}></div>
                           </Fragment>
                         );
                       })}

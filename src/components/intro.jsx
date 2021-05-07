@@ -21,7 +21,8 @@ class Intro extends Component {
                   <Typed
                     strings={[
                       "Back End Developer",
-                      "Software Engineer"
+                      "Software Engineer",
+                      "Full Stack Engineer"
                     ]}
                     typeSpeed={80}
                     backDelay={1100}
