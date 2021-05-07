@@ -1,31 +1,175 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a976c17db353834aa33f426d8c8449dd",
+    "revision": "18c61893ace754bcbe4c4edb63c75c9e",
     "url": "/index.html"
   },
   {
-    "revision": "cf35ab24b425cb4afe5d",
-    "url": "/static/css/2.a56ebd47.chunk.css"
+    "revision": "73b31d8637593496d2a1",
+    "url": "/static/css/2.f6122f81.chunk.css"
   },
   {
-    "revision": "cf1969af0c57054fdd3a",
-    "url": "/static/css/main.c27db995.chunk.css"
+    "revision": "88ba5fffc76a1572d361",
+    "url": "/static/css/main.7c222ce4.chunk.css"
   },
   {
-    "revision": "cf35ab24b425cb4afe5d",
-    "url": "/static/js/2.6954612d.chunk.js"
+    "revision": "73b31d8637593496d2a1",
+    "url": "/static/js/2.38d0221c.chunk.js"
   },
   {
-    "revision": "e30a2d3b461e4056797f0c4bfb86a6a9",
-    "url": "/static/js/2.6954612d.chunk.js.LICENSE"
+    "revision": "134a36b2a7e2a5bc91cd333598422e07",
+    "url": "/static/js/2.38d0221c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cf1969af0c57054fdd3a",
-    "url": "/static/js/main.969fbab3.chunk.js"
+    "revision": "88ba5fffc76a1572d361",
+    "url": "/static/js/main.859fa6ac.chunk.js"
   },
   {
-    "revision": "c0d7c58e510620f2f64c",
-    "url": "/static/js/runtime-main.7b61e083.js"
+    "revision": "4f2b1704eab49d50853b",
+    "url": "/static/js/runtime-main.19ccc7f6.js"
+  },
+  {
+    "revision": "537f14588017cc33959dad2c503c5c9f",
+    "url": "/static/media/AgreeFisheries.537f1458.png"
+  },
+  {
+    "revision": "d738e869e464ccb549a60e9881042097",
+    "url": "/static/media/AgreeFisheries10.d738e869.jpg"
+  },
+  {
+    "revision": "229aad03fa4c1ec2aac3c7f91c4c5161",
+    "url": "/static/media/AgreeFisheries11.229aad03.jpg"
+  },
+  {
+    "revision": "4cdc5f2ba23ff539f4d30363cffd7e71",
+    "url": "/static/media/AgreeFisheries12.4cdc5f2b.jpg"
+  },
+  {
+    "revision": "1e4dd59a2fcea0ab7db02179a5aa107b",
+    "url": "/static/media/AgreeFisheries13.1e4dd59a.jpg"
+  },
+  {
+    "revision": "494f0873a882789e16cedf1bf155b943",
+    "url": "/static/media/AgreeFisheries14.494f0873.jpg"
+  },
+  {
+    "revision": "21bf4f2aa3182762bf1d57578147e49e",
+    "url": "/static/media/AgreeFisheries15.21bf4f2a.jpg"
+  },
+  {
+    "revision": "925bf549427c0cb4e7697cddc9fbb924",
+    "url": "/static/media/AgreeFisheries16.925bf549.jpg"
+  },
+  {
+    "revision": "7a69552d38f73a6243abc52bcb0a6721",
+    "url": "/static/media/AgreeFisheries17.7a69552d.jpg"
+  },
+  {
+    "revision": "e11b1a1577f16f0220bb27720039bdb4",
+    "url": "/static/media/AgreeFisheries18.e11b1a15.jpg"
+  },
+  {
+    "revision": "32fda49016633620e59a8c24edfb2456",
+    "url": "/static/media/AgreeFisheries19.32fda490.jpg"
+  },
+  {
+    "revision": "fcb41e0333f8afd44875bf9f9e79ec50",
+    "url": "/static/media/AgreeFisheries2.fcb41e03.jpg"
+  },
+  {
+    "revision": "6aa6a616fe638ed943e4ecbbe44d171c",
+    "url": "/static/media/AgreeFisheries20.6aa6a616.jpg"
+  },
+  {
+    "revision": "4431359dbe4e2b46fbfde4696963fb29",
+    "url": "/static/media/AgreeFisheries21.4431359d.jpg"
+  },
+  {
+    "revision": "000c797a49b41cb8877bc0f9a17afce7",
+    "url": "/static/media/AgreeFisheries22.000c797a.jpg"
+  },
+  {
+    "revision": "f3549c07f4689513d2b866434dc7d992",
+    "url": "/static/media/AgreeFisheries23.f3549c07.jpg"
+  },
+  {
+    "revision": "4922fa0f0aa4993f9fcbc9d1891cce0a",
+    "url": "/static/media/AgreeFisheries24.4922fa0f.jpg"
+  },
+  {
+    "revision": "deb089270253246791166ff585f68410",
+    "url": "/static/media/AgreeFisheries25.deb08927.jpg"
+  },
+  {
+    "revision": "0f98f2299bf9d97831f72e9b3cfc0cf8",
+    "url": "/static/media/AgreeFisheries26.0f98f229.jpg"
+  },
+  {
+    "revision": "1e26c28a42910dafc6f3ebb315afe869",
+    "url": "/static/media/AgreeFisheries27.1e26c28a.jpg"
+  },
+  {
+    "revision": "f30e58bdea06650948a1fc7b6dcc6f3c",
+    "url": "/static/media/AgreeFisheries28.f30e58bd.jpg"
+  },
+  {
+    "revision": "732883cbb5c1d66c4c5822b0b934d8ba",
+    "url": "/static/media/AgreeFisheries29.732883cb.jpg"
+  },
+  {
+    "revision": "2de23d3a15fc4d6358840d94f8bce63e",
+    "url": "/static/media/AgreeFisheries3.2de23d3a.jpg"
+  },
+  {
+    "revision": "7372aa532c1c70950f84fbe23750761b",
+    "url": "/static/media/AgreeFisheries30.7372aa53.jpg"
+  },
+  {
+    "revision": "6bb3891b2fe8f7e00c75ed40b51dc2a1",
+    "url": "/static/media/AgreeFisheries31.6bb3891b.jpg"
+  },
+  {
+    "revision": "8bc1d0cf068ebaa998ec0d4204520703",
+    "url": "/static/media/AgreeFisheries32.8bc1d0cf.jpg"
+  },
+  {
+    "revision": "783440d17bb104fe125a44549a4b98cc",
+    "url": "/static/media/AgreeFisheries33.783440d1.jpg"
+  },
+  {
+    "revision": "1b202583a9215e728072c79ce25fc6a2",
+    "url": "/static/media/AgreeFisheries34.1b202583.jpg"
+  },
+  {
+    "revision": "7e74080c4dc1290b5fdf2ffb18f4508e",
+    "url": "/static/media/AgreeFisheries35.7e74080c.jpg"
+  },
+  {
+    "revision": "8aafcca35d9df35ff3262ec4fbea68db",
+    "url": "/static/media/AgreeFisheries36.8aafcca3.jpg"
+  },
+  {
+    "revision": "52ae6cf643fa8bd5422943273e5eaf64",
+    "url": "/static/media/AgreeFisheries4.52ae6cf6.jpg"
+  },
+  {
+    "revision": "52eaf1cd02de3f6bddfc748760f0336b",
+    "url": "/static/media/AgreeFisheries5.52eaf1cd.jpg"
+  },
+  {
+    "revision": "c2861f2b275cb0ee529a4f89afd1f07a",
+    "url": "/static/media/AgreeFisheries6.c2861f2b.jpg"
+  },
+  {
+    "revision": "b5add2e0783a63b127d1b4abf15abc57",
+    "url": "/static/media/AgreeFisheries7.b5add2e0.jpg"
+  },
+  {
+    "revision": "5ff79b78e14cccec9358686847c5a67a",
+    "url": "/static/media/AgreeFisheries8.5ff79b78.jpg"
+  },
+  {
+    "revision": "7dc755117801a00fb68293e2d66cc990",
+    "url": "/static/media/AgreeFisheries9.7dc75511.jpg"
   },
   {
     "revision": "da5017e8c17b3cb545d4cdd8198b3c08",
@@ -90,6 +234,78 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "bdab766ebc9a9f6e35b922f5b70b6d22",
     "url": "/static/media/IoD8.bdab766e.jpg"
+  },
+  {
+    "revision": "d01b49adf29e4224da47e1352284a09b",
+    "url": "/static/media/MajooCRM.d01b49ad.png"
+  },
+  {
+    "revision": "1c2e0d5aeb6c1d3d717980ca949db91c",
+    "url": "/static/media/MajooCRM10.1c2e0d5a.png"
+  },
+  {
+    "revision": "05adc21de8903c6b00930876add2084c",
+    "url": "/static/media/MajooCRM11.05adc21d.png"
+  },
+  {
+    "revision": "0a8bd167197a2ffd27f2e3ef0feea842",
+    "url": "/static/media/MajooCRM12.0a8bd167.png"
+  },
+  {
+    "revision": "31d89b6063555f0d58febcd605d1f38a",
+    "url": "/static/media/MajooCRM13.31d89b60.png"
+  },
+  {
+    "revision": "46dfefcca5679f5ac69e37431b79855b",
+    "url": "/static/media/MajooCRM14.46dfefcc.png"
+  },
+  {
+    "revision": "6ea2c8965a44f55e2861c53463e28958",
+    "url": "/static/media/MajooCRM15.6ea2c896.png"
+  },
+  {
+    "revision": "b331402580fe3ae48f50e6130dcae130",
+    "url": "/static/media/MajooCRM16.b3314025.png"
+  },
+  {
+    "revision": "0e6d11e30e2accc9fd275fe7dd2152fc",
+    "url": "/static/media/MajooCRM17.0e6d11e3.png"
+  },
+  {
+    "revision": "77bbee1c8813997138fe21d95145d684",
+    "url": "/static/media/MajooCRM18.77bbee1c.png"
+  },
+  {
+    "revision": "59746c1c775b2cc8d97d40785a51384f",
+    "url": "/static/media/MajooCRM2.59746c1c.png"
+  },
+  {
+    "revision": "703898e3c97aca30e773795ed95cfa69",
+    "url": "/static/media/MajooCRM3.703898e3.png"
+  },
+  {
+    "revision": "4de1d9a83b28bdc293d5873db9e2e0aa",
+    "url": "/static/media/MajooCRM4.4de1d9a8.png"
+  },
+  {
+    "revision": "dea471e726429dfb4d931c0d4f650fc2",
+    "url": "/static/media/MajooCRM5.dea471e7.png"
+  },
+  {
+    "revision": "64cb14f50fd5344b1c6cafb5a066f516",
+    "url": "/static/media/MajooCRM6.64cb14f5.png"
+  },
+  {
+    "revision": "17d71893e6e39d80d0d474b6582f6292",
+    "url": "/static/media/MajooCRM7.17d71893.png"
+  },
+  {
+    "revision": "dd2df689aae23fabe709c6fb6d1c5a3e",
+    "url": "/static/media/MajooCRM8.dd2df689.png"
+  },
+  {
+    "revision": "8eef60830d6be5a911497ef367d76702",
+    "url": "/static/media/MajooCRM9.8eef6083.png"
   },
   {
     "revision": "2c09770ce02769a7554ab9af2cb25c75",
